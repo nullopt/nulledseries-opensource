@@ -1,0 +1,35 @@
+
+-- Set this option, same as if user specified
+-- '--executable' on the command-line. Can be 
+-- disabled by user with '--no-executable'
+Option "executable"
+
+-- Output filename
+Output "output/nulledSeries_raw.lua"
+
+-- This is normal/main script
+Main "main.lua"
+
+-- Utilities
+Module "nulledSeries.SDK"  "SDK.lua"
+--Module "nulledSeries.Auth" "Auth.lua"
+
+Module "nulledSeries.Utility.Utility"           "Utility/Utility.lua"
+Module "nulledSeries.Utility.EntityManager"     "Utility/EntityManager.lua"
+Module "nulledSeries.Utility.MenuManager"       "Utility/MenuManager.lua"
+Module "nulledSeries.Utility.Tracker"           "Utility/Tracker.lua"
+
+-- Champions
+Module "nulledSeries.Champions.Twitch"     "Champions/Twitch.lua"
+Module "nulledSeries.Champions.Tristana"   "Champions/Tristana.lua"
+Module "nulledSeries.Champions.KogMaw"     "Champions/KogMaw.lua"
+Module "nulledSeries.Champions.Lucian"     "Champions/Lucian.lua"
+Module "nulledSeries.Champions.Jinx"       "Champions/Jinx.lua"
+Module "nulledSeries.Champions.Ashe"       "Champions/Ashe.lua"
+Module "nulledSeries.Champions.Janna"      "Champions/Janna.lua"
+Module "nulledSeries.Champions.Lulu"       "Champions/Lulu.lua"
+Module "nulledSeries.Champions.Ezreal"     "Champions/Ezreal.lua"
+Module "nulledSeries.Champions.Blitzcrank" "Champions/Blitzcrank.lua"
+Module "nulledSeries.Champions.Corki"      "Champions/Corki.lua"
+Module "nulledSeries.Champions.Viktor"     "Champions/Viktor.lua"
+Module "nulledSeries.Champions.Riven" 	   "Champions/Riven.lua"
